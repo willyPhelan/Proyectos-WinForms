@@ -11,8 +11,11 @@ using System.Windows.Forms;
 namespace Proyectos_con_Interfaz_grafica {
     public partial class Form2 : Form {
         public Form2() {
+            
+      
 
             InitializeComponent() ;
         }
     }
 }
+// Probando git  dddd
