@@ -9,35 +9,98 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Proyectos_con_Interfaz_grafica {
-    public partial class Form2 : Form {
-        public Form2() { InitializeComponent() ; }
-
-       
-        private void BotonSaludar_Click(object sender, EventArgs e) {
-
-           string texto = textBox1.Text ;
-
-           BotonSaludar.Text = "Hola " + texto ;  ;
-           
-        }
-
+    public partial class Elemento : Form {
+        public Elemento() { 
         
+            InitializeComponent() ;
+                            
+            comboBox1.Items.Add("Norte"); // Desplego items al abrirse la pantalla
 
-    /*    private void Form2_Load(object sender, EventArgs e)
-        {
-            MessageBox.Show("Bueeeenas");
+            comboBox1.Items.Add("Sur") ;
+
+            comboBox1.Items.Add("Oeste") ; }
+
+        private void Btn_Click(object sender, EventArgs e) {
+
+            string elemento = textElemento.Text; 
+
+
+            lwElemento.Items.Add(elemento) ;
+
         }
-    
-    */
 
-        private void Form2_FormClosing(object sender, FormClosingEventArgs e)
+        private void textElemento_TextChanged(object sender, EventArgs e)
         {
-            MessageBox.Show("Quisiera que esto dure para siempre...");
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+
         }
 
      
+         
+        /*     private void BotonSaludar_Click(object sender, EventArgs e) {
 
-       }
+                string texto = textElemento.Text ;
+
+                BotonSaludar.Text = "Hola " + texto ;  ;
+
+             }
+
+
+     */
+        /*     private void Form2_Load(object sender, EventArgs e) { 
+
+
+
+             }
+             */
+
+
+        /* private void Form2_FormClosing(object sender, FormClosingEventArgs e)
+          {
+              MessageBox.Show("Quisiera que esto dure para siempre...");
+          }
+          */
+
+          private void VerPerfil_Click(object sender, EventArgs e) {
+            
+          // Escribí acá la lógica del botón
+          MessageBox.Show("Mostrando el perfil...") ;
+          
+          string nombre = textElemento.Text ;
+
+          DateTime fecha = dateTimePicker1.Value ;
+
+          string fuma = checkBox1.Checked ? "Sí" : "No" ;
+
+        }
+
+
+    }
     }
 
 
