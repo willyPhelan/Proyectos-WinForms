@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 using System.Windows.Forms;
 
 namespace Proyectos_con_Interfaz_grafica {
@@ -97,6 +98,17 @@ namespace Proyectos_con_Interfaz_grafica {
 
           string fuma = checkBox1.Checked ? "Sí" : "No" ;
 
+          string tipo ; 
+
+          if(radioButton1.Checked) { tipo ="Bebe alcohol"  ; } else { tipo = "Conductor Designado" ; }
+
+          string region = comboBox1.SelectedItem?.ToString() ?? "No seleccionada" ;
+
+          string paquete = numericUpDown1.Value.ToString() ;
+
+          string mensaje = $"Nombre: {nombre}\nFecha: {fecha.ToShortDateString()}\nFuma: {fuma}\nTipo: {tipo}\nRegión: {region}\nPaquete: {paquete}";
+
+          MessageBox.Show(mensaje, "Perfil del Usuario") ;
         }
 
 

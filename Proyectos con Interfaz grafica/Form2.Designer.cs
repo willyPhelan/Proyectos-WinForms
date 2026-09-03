@@ -142,6 +142,7 @@
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Bebes?";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.VerPerfil.Click += new System.EventHandler(this.VerPerfil_Click);
             // 
             // radioButton2
             // 
