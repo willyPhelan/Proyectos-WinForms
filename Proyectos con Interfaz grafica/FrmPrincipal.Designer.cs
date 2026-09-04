@@ -77,7 +77,7 @@
             this.borrarToolStripMenuItem});
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
             this.archivoToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
-            this.archivoToolStripMenuItem.Text = "Archivo ";
+            this.archivoToolStripMenuItem.Text = "Archiv&o ";
             // 
             // opcionesToolStripMenuItem
             // 
@@ -86,7 +86,7 @@
             this.cruzarDatosToolStripMenuItem});
             this.opcionesToolStripMenuItem.Name = "opcionesToolStripMenuItem";
             this.opcionesToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
-            this.opcionesToolStripMenuItem.Text = "Opciones";
+            this.opcionesToolStripMenuItem.Text = "Opcione&s";
             this.opcionesToolStripMenuItem.Click += new System.EventHandler(this.opcionesToolStripMenuItem_Click);
             // 
             // abrirToolStripMenuItem
@@ -114,7 +114,7 @@
             this.bebedoresToolStripMenuItem});
             this.contratoToolStripMenuItem.Name = "contratoToolStripMenuItem";
             this.contratoToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-            this.contratoToolStripMenuItem.Text = "Contrato";
+            this.contratoToolStripMenuItem.Text = "Contrat&o";
             // 
             // fumadoresToolStripMenuItem
             // 
@@ -131,7 +131,8 @@
             // obtenerDatosToolStripMenuItem
             // 
             this.obtenerDatosToolStripMenuItem.Name = "obtenerDatosToolStripMenuItem";
-            this.obtenerDatosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.obtenerDatosToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
+            this.obtenerDatosToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.obtenerDatosToolStripMenuItem.Text = "Obtener Datos";
             this.obtenerDatosToolStripMenuItem.Click += new System.EventHandler(this.obtenerDatosToolStripMenuItem_Click);
             // 
