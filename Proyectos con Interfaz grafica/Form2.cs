@@ -111,7 +111,10 @@ namespace Proyectos_con_Interfaz_grafica {
           MessageBox.Show(mensaje, "Perfil del Usuario") ;
         }
 
+        private void Elemento_Load(object sender, EventArgs e)
+        {
 
+        }
     }
     }
 

@@ -68,27 +68,33 @@
             // 
             // textElemento
             // 
+            this.textElemento.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textElemento.Location = new System.Drawing.Point(236, 122);
             this.textElemento.Name = "textElemento";
-            this.textElemento.Size = new System.Drawing.Size(279, 20);
+            this.textElemento.Size = new System.Drawing.Size(277, 20);
             this.textElemento.TabIndex = 4;
             this.textElemento.TextChanged += new System.EventHandler(this.textElemento_TextChanged);
             // 
             // lwElemento
             // 
+            this.lwElemento.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lwElemento.HideSelection = false;
             this.lwElemento.Location = new System.Drawing.Point(239, 254);
             this.lwElemento.Name = "lwElemento";
-            this.lwElemento.Size = new System.Drawing.Size(279, 97);
+            this.lwElemento.Size = new System.Drawing.Size(529, 89);
             this.lwElemento.TabIndex = 5;
             this.lwElemento.UseCompatibleStateImageBehavior = false;
             this.lwElemento.View = System.Windows.Forms.View.List;
             // 
             // Btn
             // 
-            this.Btn.Location = new System.Drawing.Point(239, 383);
+            this.Btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Btn.Location = new System.Drawing.Point(239, 375);
             this.Btn.Name = "Btn";
-            this.Btn.Size = new System.Drawing.Size(279, 23);
+            this.Btn.Size = new System.Drawing.Size(103, 23);
             this.Btn.TabIndex = 6;
             this.Btn.Text = "Agregar";
             this.Btn.UseVisualStyleBackColor = true;
@@ -106,9 +112,11 @@
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dateTimePicker1.Location = new System.Drawing.Point(236, 167);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(279, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(277, 20);
             this.dateTimePicker1.TabIndex = 8;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
@@ -142,7 +150,6 @@
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Bebes?";
             this.radioButton1.UseVisualStyleBackColor = true;
-            this.VerPerfil.Click += new System.EventHandler(this.VerPerfil_Click);
             // 
             // radioButton2
             // 
@@ -157,9 +164,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBox1.Controls.Add(this.radioButton1);
             this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Location = new System.Drawing.Point(348, 193);
+            this.groupBox1.Location = new System.Drawing.Point(347, 193);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(156, 45);
             this.groupBox1.TabIndex = 13;
@@ -169,10 +177,12 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(649, 126);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.Size = new System.Drawing.Size(119, 21);
             this.comboBox1.TabIndex = 13;
             // 
             // label3
@@ -186,9 +196,11 @@
             // 
             // numericUpDown1
             // 
+            this.numericUpDown1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.numericUpDown1.Location = new System.Drawing.Point(649, 166);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDown1.Size = new System.Drawing.Size(118, 20);
             this.numericUpDown1.TabIndex = 15;
             // 
             // label4
@@ -209,12 +221,13 @@
             this.VerPerfil.TabIndex = 17;
             this.VerPerfil.Text = "Ver Perfil";
             this.VerPerfil.UseVisualStyleBackColor = true;
+            this.VerPerfil.Click += new System.EventHandler(this.VerPerfil_Click);
             // 
             // Elemento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(798, 442);
             this.Controls.Add(this.VerPerfil);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.numericUpDown1);
@@ -231,8 +244,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.MaximumSize = new System.Drawing.Size(883, 615);
+            this.MinimumSize = new System.Drawing.Size(814, 481);
             this.Name = "Elemento";
             this.Text = "Primera APP WinForms";
+            this.Load += new System.EventHandler(this.Elemento_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
