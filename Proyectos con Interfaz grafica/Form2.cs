@@ -100,7 +100,7 @@ namespace Proyectos_con_Interfaz_grafica {
 
           string tipo ; 
 
-          if(radioButton1.Checked) { tipo ="Bebe alcohol"  ; } else { tipo = "Conductor Designado" ; }
+          if(radioButton1.Checked) { tipo ="Bebe alcohol"  ; } else { tipo = "Bebe alcohol" ; }
 
           string region = comboBox1.SelectedItem?.ToString() ?? "No seleccionada" ;
 

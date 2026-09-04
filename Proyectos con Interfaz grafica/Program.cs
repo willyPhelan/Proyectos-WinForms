@@ -12,11 +12,15 @@ namespace Proyectos_con_Interfaz_grafica
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
-        {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Elemento());
+        static void Main(){
+
+            Application.EnableVisualStyles() ;
+            
+            Application.SetCompatibleTextRenderingDefault(false) ;
+
+            Application.Run(new FrmPrincipal()) ;
+
+           // Application.Run(new Elemento()) ;
         }
     }
 }
