@@ -52,6 +52,8 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.boton1Date = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -139,7 +141,7 @@
             // cruzarDatosToolStripMenuItem
             // 
             this.cruzarDatosToolStripMenuItem.Name = "cruzarDatosToolStripMenuItem";
-            this.cruzarDatosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cruzarDatosToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.cruzarDatosToolStripMenuItem.Text = "Cruzar Datos";
             // 
             // toolStrip1
@@ -216,11 +218,30 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(118, 17);
             this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
             // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.Location = new System.Drawing.Point(365, 58);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 4;
+            this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
+            // 
+            // boton1Date
+            // 
+            this.boton1Date.Location = new System.Drawing.Point(365, 232);
+            this.boton1Date.Name = "boton1Date";
+            this.boton1Date.Size = new System.Drawing.Size(75, 23);
+            this.boton1Date.TabIndex = 5;
+            this.boton1Date.Text = "Prueba";
+            this.boton1Date.UseVisualStyleBackColor = true;
+            this.boton1Date.Click += new System.EventHandler(this.boton1Date_Click);
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(610, 314);
+            this.Controls.Add(this.boton1Date);
+            this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
@@ -266,5 +287,7 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripProgressBar toolStripProgressBar1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.Button boton1Date;
     }
 }

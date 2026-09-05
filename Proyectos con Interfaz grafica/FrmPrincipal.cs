@@ -58,5 +58,16 @@ namespace Proyectos_con_Interfaz_grafica {
         {
 
         }
+
+        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+        {
+
+        }
+
+        private void boton1Date_Click(object sender, EventArgs e){
+
+            MessageBox.Show("La fecha seleccionada es: " + monthCalendar1.SelectionStart.ToShortDateString()) ;
+
+        }
     }
 }
